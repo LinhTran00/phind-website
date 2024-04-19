@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .navbar {
             background-color: #333;
@@ -29,30 +28,26 @@
             color: black;
         }
         .hero {
-            background: linear-gradient(to right, #b30000, #ff0000);
-            height: 500px;
+            background: linear-gradient(to right, #FF5733, #FFC300); /* Adjusted to Coca-Cola red theme */
+            height: 300px; /* Reduced height */
             text-align: center;
-            padding: 100px 0;
+            padding: 50px 0; /* Adjusted padding to fit the reduced height */
             color: white;
         }
         .hero h1 {
-            font-size: 3em;
+            font-size: 48px;
         }
         .hero p {
-            font-size: 1.5em;
+            font-size: 24px;
         }
-        .about {
+        .content {
             padding: 20px;
-            text-align: center;
         }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            text-align: justify;
         }
     </style>
 </head>
@@ -64,17 +59,21 @@
     </div>
     <div class="hero">
         <h1>Welcome to Coca-Cola</h1>
-        <p>Delicious and Refreshing Drinks</p>
+        <p>Delicious and Refreshing</p>
     </div>
-    <div class="about">
+    <div class="content">
         <h2>About Coca-Cola</h2>
-        <p>Coca-Cola is a carbonated soft drink that was invented in the United States by pharmacist John Stith Pemberton in 1886. It is the best-selling brand of soft drink in history, with over 1.9 billion servings sold each day.</p>
-    </div>
-    <div class="footer">
-        <p>© 2023 Coca-Cola. All rights reserved.</p>
+        <p>Coca-Cola is a carbonated soft drink that was invented by pharmacist John S. Pemberton in 1886. It is one of the most popular and widely consumed soft drinks in the world. Coca-Cola is known for its distinctive taste and its iconic red and white color scheme.</p>
+        <h2>Our Products</h2>
+        <p>Coca-Cola offers a wide range of products, including classic carbonated soft drinks, energy drinks, bottled water, and more. Our products are enjoyed by millions of people around the world every day.</p>
+        <h2>Our Services</h2>
+        <p>We are committed to providing high-quality products and services to our customers. Our team works tirelessly to ensure that every bottle of Coca-Cola is the best it can be.</p>
     </div>
     <script>
-        // Add any JavaScript functionality here
+        // Example JavaScript: Change the background color of the hero section on click
+        document.querySelector('.hero').addEventListener('click', function() {
+            this.style.background = 'linear-gradient(to right, #FF5733, #FFC300)'; // Change to a different gradient
+        });
     </script>
 </body>
 </html>
